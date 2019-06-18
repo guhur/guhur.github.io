@@ -1,0 +1,24 @@
+# A few notes to make X11 forwarding working
+
+Today, I overcome a certain number of problems when trying to play my experiments from my home computer.
+
+Here is a non-exhaustive list of problems I had to solve.
+
+## Why setup X11 forwarding
+
+
+## Setting up an X11 server
+
+
+## .Xauthority does not exist
+
+OK that's one is 
+
+## Does it work?
+
+The test I do is generally: `xlogo`. You should see a new red-and-white window with a X symbol.
+
+
+## It is now OpenGL that makes our life miserable 
+
+Similarly to the previous test, you can check whether OpenGL is working properly by launching `glxgears`.
