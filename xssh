@@ -22,3 +22,23 @@ The test I do is generally: `xlogo`. You should see a new red-and-white window w
 ## It is now OpenGL that makes our life miserable 
 
 Similarly to the previous test, you can check whether OpenGL is working properly by launching `glxgears`.
+Here is the message error I obtained:
+
+```
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  151 (GLX)
+  Minor opcode of failed request:  3 (X_GLXCreateContext)
+  Value in failed request:  0x0
+  Serial number of failed request:  27
+  Current serial number in output stream:  28
+```
+
+In my case, the VGA drivers are supported by my GPU card, an NVIDIA RTX 2070.
+A first reasonable attempt seems to update these drivers from 418 to 430 using `apt`:
+
+```
+sudo apt install nvidia-drivers-430
+```
+
+You might also have some clashes between two types of drivers, see the forum post for [details](https://bbs.archlinux.org/viewtopic.php?id=236486).
+
