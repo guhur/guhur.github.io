@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>Documentation - Retro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 part">
+                    <h1>Documentation</h1>
+                    <h4>Table of contents : </h4>
+                    <h5>Installation</h5>
+                    <ul>
+                        <li><a href="#local">Running a local server</li>
+                        <li><a href="#live">Running a live server</a></li>
+                    </ul>
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="#home">Home Page</li>
+                        <li><a href="#404">404 Page</a></li>
+                    </ul>
+                    <h5>Sections</h5>
+                    <ul>
+                        <li><a href="#hero">Hero</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <h5>Components</h5>
+                    <ul>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#glitch">Glitch Text</a></li>
+                        <li><a href="#baffle">Baffle Text</a></li>
+                        <li><a href="#counter">Counter</a></li>
+                        <li><a href="#animation">Animation Container</a></li>
+                        <li><a href="#progress">Progress Bar</a></li>
+                        <li><a href="#navigation">Navigation</a></li>
+                        <li><a href="#spinner">Spinner</a></li>
+                    </ul>
+                    
+                </div>
+                <h2 class="section_heading">
+                    Installation
+                </h2>
+                <div class="col-md-12 part" id="local">
+                    <div class="col-md-12 part" id="local">
+                        <h4>Running a local server</h4>
+                        <p>In order to install you need to have Node version less than v15 otherwise it will not work. This has been tested up to <b>v14.18.1</b> Node version.</p>
+                        <p><b>Installing Node on Windows</b></p>
+                        <p>For Windows 64 bit please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi</a></p>
+                        <p>For Windows 32 bit please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x86.msi" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x86.msi</a></p>
+                        <p>Please open the .msi file to start the installation process.</p>
+                        
+                        <p><b>Installing Node on Mac</b></p>
+                        <p>For Mac OSX please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg</a></p>
+                        <p>Please open the .pkg file and follow the Apple Installer process.</p>
+    
+                        <p><b>Installing Node on Linux</b></p>
+                        <p>I recommend installing NVM to use 14.18.1 of Node. You can find the installation instructions here <a href="https://github.com/nvm-sh/nvm" target="_blank">https://github.com/nvm-sh/nvm</a></p>
+                        <p>After installing, please run</p>
+                        <pre>
+    nvm install 14.18.1
+    nvm use 14.18.1</pre>
+                        <p>Install Gatby CLI</p>
+                        <pre>
+    npm install gatsby-cli -g
+                        </pre>
+                        <p>Run the following commands in the template's directory</p>
+                        <pre>
+    npm install
+    gatsby develop
+                        </pre>
+                </div>
+                <div class="col-md-12 part"  id="live">
+                    <h4>Running a live  server</h4>
+                    <p>Follow this guide for running a live server <a href="https://www.gatsbyjs.org/docs/deploying-and-hosting/">https://www.gatsbyjs.org/docs/deploying-and-hosting/</a></p>
+                </div>
+
+                <div class="col-md-12 part"  id="home">
+                    <h4>Home page</h4>
+                    <p>The homepage needs to be configured from /src/pages/index.js</p>
+                    <p>You can set up the meta tags, sections and spinner from there</p>
+                </div>
+
+                <div class="col-md-12 part"  id="404">
+                    <h4>404 page</h4>
+                    <p>The homepage needs to be configured from /src/pages/404.js</p>
+                </div>
+                <h2 class="section_heading">
+                    Sections
+                </h2>
+                <div class="col-md-12 part"  id="hero">
+                    <h4>Hero</h4>
+                    <p>The Hero section is located at /src/sections/hero/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/hero/style.scss</p>
+                    <p>The main image on the right is located at /content/images/person.jpg</p>
+                    <p>The floating icons on the left are located on the /content/images/icons directory</p>
+                </div>
+
+                <div class="col-md-12 part"  id="about">
+                    <h4>About</h4>
+                    <p>The About section is located at /src/sections/about/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/about/style.scss</p>
+                </div>
+
+                <div class="col-md-12 part"  id="services">
+                    <h4>Services</h4>
+                    <p>The Services section is located at /src/sections/services/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/services/style.scss</p>
+                </div>
+
+                <div class="col-md-12 part"  id="portfolio">
+                    <h4>Portfolio</h4>
+                    <p>The Portfolio section is located at /src/sections/portfolio/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/portfolio/style.scss</p>
+                    <p>The portfolio content are located on /content/portfolio directory which are fetched using graphql</p>
+                    <pre>
+---
+id: 1
+image: './image.jpg'
+title: "Front-end Development"
+category: "React.js"
+---
+                    </pre>
+                    <p>The image needs to be placed in the same directory</p>
+                </div>
+                <div class="col-md-12 part" id="testimonials">
+                    <h4>Testimonials</h4>
+                    <p>The Testimonials section is located at /src/sections/testimonials/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/testimonials/style.scss</p>
+                    <p>The testimonials content are located on /content/testimonials directory which are fetched using graphql</p>
+                    <pre>
+---
+id: 1
+image: './image.jpg'
+heading: 'Great Service'
+name: 'Robert Doe'
+profession: 'Software Engineer'
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet elit quam, et finibus leo feugiat quis. Ut in turpis vitae elit dapibus porta vel vitae justo. Fusce ut nisi blandit, pellentesque metus sed, hendrerit nisi. Duis aliquam ante non velit molestie, et laoreet enim consectetur. Duis rutrum mollis velit, id maximus elit finibus vel. Vestibulum ex sapien, pellentesque id finibus non, elementum bibendum ex. Curabitur vitae felis posuere, luctus lorem imperdiet, ultrices libero. Duis blandit venenatis felis, vitae vulputate mi. Aliquam vitae egestas tortor, eu congue ex. 
+                    </pre>
+                    <p>The images for clients are on /content/images/clients</p>
+                </div>
+                
+                <div class="col-md-12 part" id="contact">
+                    <h4>Contact</h4>
+                    <p>The Contact section is located at /src/sections/contact/index.js</p>
+                    <p>For styling the CSS file is located on /src/sections/contact/style.scss</p>
+                    <p>It uses an iframe instead of API key for the Google map</p>
+                </div>
+                <h2 class="section_heading">
+                    Components
+                </h2>
+
+                <div class="col-md-12 part" id="layout">
+                    <h4>Layout</h4>
+                    <p>The component is located on /src/components/layout</p>
+                    <p>The IDs of sections are set in <b>sections</b> variable</p>
+                    <pre>
+this.sections = [
+    'home',
+    'about',
+    'services',
+    'portfolio',
+    'testimonials',
+    'contact',
+]
+                    </pre>
+                </div>
+                <div class="col-md-12 part" id="glitch">
+                    <h4>Glitch Text</h4>
+                    <p>The component is located on /src/components/glitch</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-12 part" id="baffle">
+                    <h4>Baffle Text</h4>
+                    <p>The component is located on /src/components/baffle-text</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                        <li><b>revealDuration</b> <span> (int)</span></li>
+                        <li><b>revealDelay</b> <span> (int)</span></li>
+                        <li><b>revealDelay</b> <span> (int)</span></li>
+                        <li><b>parentMethod</b> <span> (function)</span></li>
+                        <li><b>callMethodTime</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-12 part" id="counter">
+                    <h4>Counter</h4>
+                    <p>The component is located on /src/components/counter</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>icon</b> <span> (FontAwesome Icon)</span></li>
+                        <li><b>text</b> <span> (string)</span></li>
+                        <li><b>value</b> <span> (int)</span></li>
+                        <li><b>symbol</b> <span> (string)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="counter">
+                    <h4>Animation</h4>
+                    <p>The component is located on /src/components/animation-container</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>children</b> <span> (Components)</span></li>
+                        <li><b>animation</b> <span> (className from animate.css)</span></li>
+                        <li><b>id</b> <span> (string)</span></li>
+                        <li><b>height</b> <span> (int)</span></li>
+                        <li><b>delay</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="animation">
+                    <h4>Animation</h4>
+                    <p>The component is located on /src/components/animation-container</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>children</b> <span> (Components)</span></li>
+                        <li><b>animation</b> <span> (className from animate.css)</span></li>
+                        <li><b>id</b> <span> (string)</span></li>
+                        <li><b>height</b> <span> (int)</span></li>
+                        <li><b>delay</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="progress">
+                    <h4>Progress</h4>
+                    <p>The component is located on /src/components/progress</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>name</b> <span> (int)</span></li>
+                        <li><b>value</b> <span> (int)</span></li>
+                        <li><b>delay</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="navigation">
+                    <h4>Navigation</h4>
+                    <p>The component is located on /src/components/navigation</p>
+                    <p>The IDs of sections are set in <b>sections</b> variable</p>
+                    <pre>
+this.sections = [
+    {
+        name: "Home"
+    },
+    {
+        name: "About"
+    },
+    {
+        name: "Services"
+    },
+    {
+        name: "Portfolio"
+    },
+    {
+        name: "Testimonials"
+    },
+    {
+        name: "Contact"
+    }
+]
+                    </pre>
+                </div>
+
+
+                
+                <div class="col-md-12 part" id="spinner">
+                    <h4>Spinner</h4>
+                    <p>The component is located on /src/components/spinner</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>duration</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .part {
+            padding: 50px 0px;
+        }
+        h4, h5 {
+            padding: 10px 0 0 0;
+        }
+        pre {
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #555;
+        }
+    </style>
+</html>
